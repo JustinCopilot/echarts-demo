@@ -1,22 +1,11 @@
 ---
 hero:
-  title: library
-  description: A react library developed with dumi
-  actions:
-    - text: Hello
-      link: /
-    - text: World
-      link: /
-features:
-  - title: Hello
-    emoji: 💎
-    description: Put hello description here
-  - title: World
-    emoji: 🌈
-    description: Put world description here
-  - title: '!'
-    emoji: 🚀
-    description: Put ! description here
----
+  title: Echarts Demo
+  description: Apache ECharts 开源可视化图表库案例练习
 
-echarts-demos
+  actions:
+    - text: 开始
+      link: /components/basic-line-chart
+    # - text: World
+    #   link: /
+---
