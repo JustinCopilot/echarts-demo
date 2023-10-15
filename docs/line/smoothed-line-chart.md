@@ -9,7 +9,7 @@ import React from 'react';
 import BasicChart from 'echarts-demos/BasicChart';
 import type { EChartsOption } from 'echarts';
 
-const SmoothedLineChart: React.FC = () => {
+export default () => {
   const option: EChartsOption = {
     xAxis: {
       type: 'category',
@@ -29,6 +29,4 @@ const SmoothedLineChart: React.FC = () => {
 
   return <BasicChart option={option} />;
 };
-
-export default SmoothedLineChart;
 ```

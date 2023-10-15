@@ -1,8 +1,8 @@
 ---
-order: 1
+order: 3
 ---
 
-# 基础折线图
+# 基础面积图
 
 ```jsx
 import React from 'react';
@@ -13,6 +13,7 @@ export default () => {
   const option: EChartsOption = {
     xAxis: {
       type: 'category',
+      boundaryGap: false,
       data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
     },
     yAxis: {
@@ -20,12 +21,14 @@ export default () => {
     },
     series: [
       {
-        data: [150, 230, 224, 218, 135, 147, 260],
-        type: 'line'
+        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        type: 'line',
+        areaStyle: {}
       }
     ]
   };
 
   return <BasicChart option={option} />;
 };
+
 ```
