@@ -1,6 +1,10 @@
 import { defineConfig } from 'dumi';
 
+const repo = 'echarts-demo';
+
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
   outputPath: 'docs-dist',
   theme: {
     '@c-primary': 'aqua',
