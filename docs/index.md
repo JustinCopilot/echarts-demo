@@ -5,7 +5,7 @@ hero:
 
   actions:
     - text: 开始
-      link: /components/basic-line-chart
+      link: /guide
     # - text: World
     #   link: /
 ---

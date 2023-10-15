@@ -25,9 +25,6 @@ echarts.use([
 
 // export type EChartsOption = echarts.ComposeOption<GridComponentOption | BarSeriesOption>;
 
-// const chartDom = document.getElementById('main');
-// const myChart = echarts.init(chartDom);
-
 interface BasicChartProps {
   option: echarts_1.EChartsOption;
 }
