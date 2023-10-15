@@ -6,14 +6,36 @@ import {
   PieChart,
   ScatterChart,
 } from 'echarts/charts';
-import { GridComponent } from 'echarts/components';
+import {
+  DatasetComponent,
+  GridComponent,
+  LegendComponent,
+  MarkAreaComponent,
+  MarkLineComponent,
+  MarkPointComponent,
+  TitleComponent,
+  ToolboxComponent,
+  TooltipComponent,
+  TransformComponent,
+  VisualMapComponent,
+} from 'echarts/components';
 import * as echarts from 'echarts/core';
 import { UniversalTransition } from 'echarts/features';
 import { CanvasRenderer } from 'echarts/renderers';
 import React, { useEffect, useRef } from 'react';
 
 echarts.use([
+  DatasetComponent,
+  TitleComponent,
+  ToolboxComponent,
+  TooltipComponent,
   GridComponent,
+  TransformComponent,
+  VisualMapComponent,
+  MarkAreaComponent,
+  LegendComponent,
+  MarkLineComponent,
+  MarkPointComponent,
   LineChart,
   BarChart,
   PieChart,

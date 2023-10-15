@@ -7,8 +7,8 @@ export default defineConfig({
   publicPath: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
   outputPath: 'docs-dist',
   theme: {
-    '@c-primary': 'aqua',
-    'primary-color': 'aqua',
+    '@c-primary': 'royalblue',
+    'primary-color': 'royalblue',
   },
   styles: [
     `
