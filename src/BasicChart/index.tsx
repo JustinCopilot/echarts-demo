@@ -7,6 +7,7 @@ import {
   ScatterChart,
 } from 'echarts/charts';
 import {
+  DataZoomComponent,
   DatasetComponent,
   GridComponent,
   LegendComponent,
@@ -30,6 +31,7 @@ echarts.use([
   ToolboxComponent,
   TooltipComponent,
   GridComponent,
+  DataZoomComponent,
   TransformComponent,
   VisualMapComponent,
   MarkAreaComponent,
@@ -49,15 +51,20 @@ echarts.use([
 
 interface BasicChartProps {
   option: echarts_1.EChartsOption;
+  setChartInstance: (instance: echarts.ECharts) => void;
 }
 
-const BasicChart: React.FC<BasicChartProps> = ({ option }) => {
+const BasicChart: React.FC<BasicChartProps> = ({
+  option,
+  setChartInstance = () => ({}),
+}) => {
   const chartRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const chart = echarts.init(chartRef.current!);
-
     chart.setOption(option);
+
+    setChartInstance(chart);
 
     return () => {
       chart.dispose();
