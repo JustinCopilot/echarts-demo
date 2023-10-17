@@ -14,6 +14,7 @@ import {
   MarkAreaComponent,
   MarkLineComponent,
   MarkPointComponent,
+  PolarComponent,
   TitleComponent,
   ToolboxComponent,
   TooltipComponent,
@@ -45,6 +46,7 @@ echarts.use([
   MapChart,
   CanvasRenderer,
   UniversalTransition,
+  PolarComponent,
 ]);
 
 // export type EChartsOption = echarts.ComposeOption<GridComponentOption | BarSeriesOption>;

@@ -103,6 +103,69 @@ export default defineConfig({
               link: '/line/dynamic-data-time-axis',
               order: 20,
             },
+            {
+              title: '函数绘图',
+              link: '/line/function-plot',
+              order: 21,
+            },
+            {
+              title: '动态排序折线图',
+              link: '/line/line-race',
+              order: 22,
+            },
+            {
+              title: '折线图的标记线',
+              link: '/line/line-with-marklines',
+              order: 23,
+            },
+            {
+              title: '自定义折线图样式',
+              link: '/line/line-style-and-item-style',
+              order: 24,
+            },
+          ],
+        },
+      ],
+      '/bar': [
+        {
+          title: '📊 柱状图',
+          children: [
+            {
+              title: '带背景色的柱状图',
+              link: '/bar/bar-with-background',
+              order: 1,
+            },
+            { title: '基础柱状图', link: '/bar/basic-bar', order: 2 },
+            {
+              title: '坐标轴刻度与标签对齐',
+              link: '/bar/axis-align-with-tick',
+              order: 3,
+            },
+            {
+              title: '自定义单个柱子颜色',
+              link: '/bar/set-style-of-single-bar',
+              order: 4,
+            },
+            {
+              title: '瀑布图（柱状图模拟）',
+              link: '/bar/waterfall-chart',
+              order: 5,
+            },
+            {
+              title: '交错正负轴标签',
+              link: '/bar/bar-chart-with-negative-value',
+              order: 6,
+            },
+            {
+              title: '极坐标柱状图标签',
+              link: '/bar/radial-polar-bar-label-position',
+              order: 7,
+            },
+            {
+              title: '极坐标柱状图标签',
+              link: '/bar/tangential-polar-bar-label-position',
+              order: 8,
+            },
           ],
         },
       ],
