@@ -7,6 +7,7 @@ import {
   ScatterChart,
 } from 'echarts/charts';
 import {
+  BrushComponent,
   DataZoomComponent,
   DatasetComponent,
   GridComponent,
@@ -47,6 +48,7 @@ echarts.use([
   CanvasRenderer,
   UniversalTransition,
   PolarComponent,
+  BrushComponent,
 ]);
 
 // export type EChartsOption = echarts.ComposeOption<GridComponentOption | BarSeriesOption>;

@@ -21,6 +21,9 @@ export default defineConfig({
       .dumi-default-header-left {
         width: 220px !important;
       }
+      .dumi-default-content {
+        padding: 30px 30px 0 !important;
+      }
       .dumi-default-hero-title {
         font-size: 50px !important;
       }
@@ -114,6 +117,38 @@ export default defineConfig({
             {
               title: '极坐标柱状图标签',
               link: '/bar/tangential-polar-bar-label-position',
+            },
+            {
+              title: '世界人口总量 - 条形图',
+              link: '/bar/world-population',
+            },
+            {
+              title: '特性示例：渐变色 阴影 点击缩放',
+              link: '/bar/clickable-column-chart-with-gradient',
+            },
+            {
+              title: '柱状图标签旋转',
+              link: '/bar/bar-label-rotation',
+            },
+            {
+              title: '堆叠柱状图',
+              link: '/bar/stacked-column-chart',
+            },
+            {
+              title: '阶梯瀑布图（柱状图模拟）',
+              link: '/bar/waterfall-chart-2',
+            },
+            {
+              title: '堆叠条形图',
+              link: '/bar/stacked-horizontal-bar',
+            },
+            {
+              title: '柱状图框选',
+              link: '/bar/brush-select-on-column-chart',
+            },
+            {
+              title: '正负条形图',
+              link: '/bar/bar-chart-with-negative-value-2',
             },
           ]),
         },
