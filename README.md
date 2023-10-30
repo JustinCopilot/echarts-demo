@@ -9,10 +9,6 @@ A react library developed with dumi
 
 TODO
 
-## Options
-
-TODO
-
 ## Development
 
 ```bash
