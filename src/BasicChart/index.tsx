@@ -1,6 +1,7 @@
 import type echarts_1 from 'echarts';
 import {
   BarChart,
+  EffectScatterChart,
   LineChart,
   MapChart,
   PieChart,
@@ -10,6 +11,7 @@ import {
   BrushComponent,
   DataZoomComponent,
   DatasetComponent,
+  GeoComponent,
   GridComponent,
   LegendComponent,
   MarkAreaComponent,
@@ -49,6 +51,8 @@ echarts.use([
   UniversalTransition,
   PolarComponent,
   BrushComponent,
+  EffectScatterChart,
+  GeoComponent,
 ]);
 
 // export type EChartsOption = echarts.ComposeOption<GridComponentOption | BarSeriesOption>;

@@ -39,8 +39,9 @@ export default defineConfig({
       { title: '📊 柱状图', link: '/bar/bar-with-background' },
       { title: '🍪 饼图', link: '/pie/referer-of-a-website' },
       { title: '⭐️ 散点图', link: '/scatter/basic-scatter-chart' },
-      { title: '🌏 地理坐标/地图', link: '/' },
+      { title: '🌏 地理坐标/地图', link: '/map/note' },
     ],
+    footer: '',
     sidebar: {
       '/line': [
         {
@@ -151,6 +152,12 @@ export default defineConfig({
               link: '/bar/bar-chart-with-negative-value-2',
             },
           ]),
+        },
+      ],
+      '/map': [
+        {
+          title: '🌏 地理坐标/地图',
+          children: addOrder([{ title: '地图相关', link: '/map/note' }]),
         },
       ],
     },
